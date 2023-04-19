@@ -1,0 +1,60 @@
+/* external css: flickity.css */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: sans-serif; }
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  #home-section{
+    background: url(/Assets/Images/fathul-abrar-T-qI_MI2EMA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+#home-section  .home-inner {
+    padding-top: 100px;
+    text-align: center;
+   }
+.home-inner h1{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+ #home-section .dark-overlay{
+    top: 0;
+    left:0;
+    width: 100%;
+    min-height: 700px;
+    background: rgba(0, 0, 0,0.4) ;
+}
+
+
+
+
+
+
