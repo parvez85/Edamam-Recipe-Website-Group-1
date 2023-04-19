@@ -6,21 +6,22 @@
   }
   
   body { font-family: sans-serif; }
-  
-  .gallery {
+
+  .carousel {
     background: #EEE;
   }
   
-  .gallery-cell {
-    width: 66%;
-    height: 200px;
+  .carousel-cell {
+    width: 30%;
+    height: 300px;
     margin-right: 10px;
     background: #8C8;
+    border-radius: 5px;
     counter-increment: gallery-cell;
   }
   
   /* cell number */
-  .gallery-cell:before {
+  .carousel-cell:before {
     display: block;
     text-align: center;
     content: counter(gallery-cell);
@@ -28,7 +29,7 @@
     font-size: 80px;
     color: white;
   }
-
+  
   #home-section{
     background: url(/Assets/Images/fathul-abrar-T-qI_MI2EMA-unsplash.jpg);
     background-repeat: no-repeat;
@@ -50,11 +51,79 @@
     left:0;
     width: 100%;
     min-height: 700px;
-    background: rgba(0, 0, 0,0.4) ;
+    background: rgba(0, 0, 0, 0.5) ;
 }
 
+.navbar { 
+  background-color: #5DB075;     
+  
+}
 
+.navbar{
+  border-bottom: #5ea572 2px solid;   
+}
 
+header a{
+  color: rgb(245, 245, 245);
+}
 
+.form-inline{
+  justify-content: center;
+  margin-top: 40px;
+}
 
+#search-button{
+  background-color:#5DB075 ;
+  color: white;
+  height: 45px;
+  width: 100px !important ;
+}
 
+#search-button:hover{
+  background-color: #5ea572;
+}
+
+.form-control{
+  width: 400px !important ;
+  height: 45px;
+}
+
+#about-section{
+  padding: 30px;
+}
+#popular-recipes{
+  padding: 30px;
+}
+
+#main-footer{
+  background-color: #5DB075;   
+}
+
+.logo-footer{
+  padding-bottom: 15px;
+}
+
+#main-footer p{
+  color: white;
+}
+
+#main-footer .btn{
+  color: #5DB075;
+  background-color: white;
+}
+#main-footer .btn:hover{
+  background-color: #e2e7e3
+}
+
+.form-control2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 300px;
+}
+/* 
+#nutrional-values{
+  text-align: left;
+  padding: 10px;
+} */

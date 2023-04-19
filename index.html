@@ -47,43 +47,62 @@
             <h1 class="display-4"> <strong>Easy Recipes for any occasion</strong> </h1>
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn my-2 my-sm-0" type="submit" id="search-button">Search</button>
               </form>
         </div>
     </div>
 </header>
 
-<p><code>wrapAround: true</code></p>
-
-<!-- Flickity HTML init -->
-<div class="gallery js-flickity"
-  data-flickity-options='{ "wrapAround": true }'>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-</div>
-   
-<div class="card text-center">
-    <div class="card-header">
-      Featured
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    <div class="card-footer text-muted">
-      2 days ago
+<section id="about-section">
+  <div class="about-container">
+    <div class="row">
+      <div class="col-md-6 order-2">
+          <img src="./Assets/images/flower.jpg" alt="" class="img-fluid m-5 rounded-circle" >
+      </div>
+      <div class="col text-left py-5" id="resume">
+        <h1 class="display-4">About Me</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab magnam officia expedita quam commodi, minima vero illo dolorem voluptatibus odit nulla, eius facere, unde aliquam! Dolore voluptatem illum maxime!
+        Voluptas nam neque similique. Odio fuga dolorem illo odit corporis eveniet harum quos eligendi, fugiat velit earum repellendus facilis! Ut officiis voluptate officia. Reprehenderit aliquam repellat magni laudantium consectetur tenetur.
+        Aut, inventore. Atque, esse libero eius voluptatum quibusdam illum incidunt eligendi harum quisquam quo explicabo soluta. Corporis officiis animi laudantium perspiciatis! Sunt, repudiandae quod? Ratione cum deleniti vel earum eaque?</p>
+      </div>
     </div>
   </div>
+</section>
+
+<!-- Flickity HTML init -->
+<div id="popular-recipes">
+  <h1 class="display-4">Popular Recipes:</h1>
+  <div class="carousel" data-flickity>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+  </div>
+</div>
+
+   
+
+<div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h1 class="display-4" id="nutrional-values">Nutrional Values</h1>
+      <div class="form-group" id="textarea">
+        <label for="exampleFormControlTextarea1">Enter an ingredient list list for what you are cooking, like <em>"1 cup rice, 10 oz chickpeas", etc.</em>
+          Enter each ingredient on a new line</label>
+        <textarea class="form-control2" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
 
   <footer id="main-footer">
     <div class="container">
       <div class="row">
         <div class="col text-center py-4">
-          <h3>Asma Hassan</h3>
+          <img src="/Assets/Images/Logo Name.png" class="logo-footer" class="d-inline-block align-top" alt="Logo">
           <p>Copyright &copy;
             <span id="year"></span>
           </p>
