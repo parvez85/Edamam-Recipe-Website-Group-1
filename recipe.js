@@ -21,6 +21,11 @@ async function getRecipeData(searchValue) {
     return data;
 }
 
+
+
 function displayRecipeData (data){
     
+    var image = $('#image');
+
+    image.html(from.values(data).hits[0].recipe.images)
 }
