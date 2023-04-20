@@ -56,12 +56,15 @@
 
 .navbar { 
   background-color: #5DB075;     
+  border-bottom: #5ea572 2px solid; 
+  overflow: hidden;      
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1; 
   
 }
 
-.navbar{
-  border-bottom: #5ea572 2px solid;   
-}
 
 header a{
   color: rgb(245, 245, 245);
