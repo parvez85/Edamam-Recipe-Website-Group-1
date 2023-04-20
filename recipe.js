@@ -5,18 +5,11 @@ var search = document.getElementById("search-input")
 
 
 
-
-button.addEventListener("click",function(event){
+button.addEventListener("click", function(event) {
     event.preventDefault();
-    var currentVal = search.val();
-
-    //getRecipeData("search")
-
-    getRecipeData(currentVal).then(function(data){
-        displayWeatherData(data);
-    });
-
-});
+    var searchValue = search.value;
+    getRecipeData(searchValue);
+  });
 
 
 async function getRecipeData(searchValue) {
@@ -28,3 +21,6 @@ async function getRecipeData(searchValue) {
     return data;
 }
 
+function displayRecipeData (data){
+    
+}
