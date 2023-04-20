@@ -4,13 +4,13 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  
+
   body { font-family: sans-serif; }
 
   .carousel {
     background: #EEE;
   }
-  
+
   .carousel-cell {
     width: 30%;
     height: 300px;
@@ -19,7 +19,7 @@
     border-radius: 5px;
     counter-increment: gallery-cell;
   }
-  
+
   /* cell number */
   .carousel-cell:before {
     display: block;
@@ -29,7 +29,7 @@
     font-size: 80px;
     color: white;
   }
-  
+
   #home-section{
     background: url(/Assets/Images/fathul-abrar-T-qI_MI2EMA-unsplash.jpg);
     background-repeat: no-repeat;
@@ -54,15 +54,15 @@
     background: rgba(0, 0, 0, 0.5) ;
 }
 
-.navbar { 
-  background-color: #5DB075;     
-  border-bottom: #5ea572 2px solid; 
-  overflow: hidden;      
+.navbar {
+  background-color: #5DB075;
+  border-bottom: #5ea572 2px solid;
+  overflow: hidden;
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 1; 
-  
+  z-index: 1;
+
 }
 
 
@@ -99,7 +99,7 @@ header a{
 }
 
 #main-footer{
-  background-color: #5DB075;   
+  background-color: #5DB075;
 }
 
 .logo-footer{
@@ -125,7 +125,12 @@ header a{
   width: 700px;
   height: 300px;
 }
-/* 
+
+#logo2{
+  margin-top: 60px;
+}
+
+/*
 #nutrional-values{
   text-align: left;
   padding: 10px;
