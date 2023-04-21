@@ -31,6 +31,7 @@ function displayRecipeData(data){
   
     var ingredients1 = $('.ingredients');
     var recipeTitle = $('.recipe-title');
+    var recipeImage = $('.recipe-image');
   
 
     
@@ -38,4 +39,5 @@ function displayRecipeData(data){
     
     ingredients1.html(data.hits[0].recipe.ingredientLines.join(", ")); //Maybe turn the ingredients into a list using innerhtml right now it is a block of text?
   
+    recipeImage.attr('src', data.hits[0].recipe.image);
 }
