@@ -41,3 +41,39 @@ function displayRecipeData(data){
   
     recipeImage.attr('src', data.hits[0].recipe.image);
 }
+
+function displayRecipeData(data) {
+  var recipeCards = $('#recipe-cards');
+  var cardTemplate = $('#card-template');
+
+  recipeCards.empty(); // Remove any existing cards
+
+  var row = $('<div class="row"></div>');
+  recipeCards.append(row);
+  for (var i = 0; i < data.hits.length; i++) {
+ 
+    var card = cardTemplate.clone().removeAttr('id').removeAttr('style');
+
+  
+    card.find('.recipe-title').html(data.hits[i].recipe.label);
+    card.find('.recipe-image').attr('src', data.hits[i].recipe.image);
+   
+
+  
+    row.append($('<div class="col"></div>').append(card));
+    card.removeClass('d-none'); 
+
+    if ((i + 1) % 4 === 0) {
+     
+      row = $('<div class="row"></div>');
+      recipeCards.append(row);
+    }
+  }
+}
+
+
+
+
+
+
+

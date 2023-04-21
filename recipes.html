@@ -32,46 +32,28 @@
     </div>
 </div> -->
 
-<div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <img class="recipe-image" src="https://edamam-product-images.s3.amazonaws.com/web…9f9a0de07cdb6d4aac002c30bd2dbf55214673f83804120cf" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="recipe-title"></h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
+<div class="grid-container">
+    <div class="row row-cols-4" id="recipe-cards">
+      <!-- Cards will be dynamically added here -->
+    </div>
+  </div>
+  
+  <!-- Card template (hidden) -->
+  <div id="card-template" style="display:none;">
+    <div class="card">
+      <img class="recipe-image" src="" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="recipe-title"></h5>
+        <!-- <p class="ingredients"></p> -->
       </div>
     </div>
   </div>
+  
+  
+  
+  
+
+      
   
 
 <script src="recipe.js"> </script>
