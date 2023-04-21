@@ -5,7 +5,11 @@
     box-sizing: border-box;
   }
 
-  body { font-family: sans-serif; }
+  body { 
+    font-family: sans-serif;
+    min-height: 100%;
+    overflow: auto;
+  }
 
   .carousel {
     background: #EEE;
@@ -206,3 +210,24 @@ ul{
   margin-top: 126px;;
 }
 
+
+.grid-container{
+  margin-top: 30px !important;
+  margin: 0 auto;
+  display: grid;
+  
+}
+
+#recipe-cards{
+  display: grid;
+  grid-gap: 20px;
+}
+
+.card{
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}

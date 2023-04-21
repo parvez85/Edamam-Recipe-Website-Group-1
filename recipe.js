@@ -45,6 +45,7 @@ function displayRecipeData(data){
 function displayRecipeData(data) {
   var recipeCards = $('#recipe-cards');
   var cardTemplate = $('#card-template');
+  
 
   recipeCards.empty(); // Remove any existing cards
 
@@ -57,7 +58,7 @@ function displayRecipeData(data) {
   
     card.find('.recipe-title').html(data.hits[i].recipe.label);
     card.find('.recipe-image').attr('src', data.hits[i].recipe.image);
-   
+    
 
   
     row.append($('<div class="col"></div>').append(card));
@@ -71,7 +72,31 @@ function displayRecipeData(data) {
   }
 }
 
+var recipesButton = document.getElementById("recipe-button")
 
+//function getRecipeSearchData(){
+  
+  //recipesButton.attr("href" + data.hits[i].recipe.url)
+  
+
+//}
+
+
+
+
+recipesButton.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  document.getElementById("recipe-button").href = data.hits[i].recipe.url
+
+  //document.getElementById('test').innerHTML = '<a href="' + data.hits[i].recipe.url + '">Link</a>';
+
+})
+
+
+
+//getRecipeSearchData)
+ 
 
 
 
