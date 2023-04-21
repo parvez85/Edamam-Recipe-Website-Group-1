@@ -153,6 +153,7 @@ header a{
 .row{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .recipe-card{
   background-color: #4E7597;
@@ -205,4 +206,5 @@ ul{
   margin-left: -179px;
   margin-top: 126px;;
 }
+
 
