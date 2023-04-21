@@ -72,31 +72,9 @@ function displayRecipeData(data) {
   }
 }
 
-var recipesButton = document.getElementById("recipe-button")
-
-//function getRecipeSearchData(){
-  
-  //recipesButton.attr("href" + data.hits[i].recipe.url)
-  
-
-//}
 
 
 
-
-recipesButton.addEventListener("click", function(event) {
-  event.preventDefault();
-
-  document.getElementById("recipe-button").href = data.hits[i].recipe.url
-
-  //document.getElementById('test').innerHTML = '<a href="' + data.hits[i].recipe.url + '">Link</a>';
-
-})
-
-
-
-//getRecipeSearchData)
- 
 
 
 
