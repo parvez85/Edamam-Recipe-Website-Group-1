@@ -45,38 +45,29 @@ function displayRecipeData(data){
 function displayRecipeData(data) {
   var recipeCards = $('#recipe-cards');
   var cardTemplate = $('#card-template');
-  
 
   recipeCards.empty(); // Remove any existing cards
 
   var row = $('<div class="row"></div>');
   recipeCards.append(row);
+  
   for (var i = 0; i < data.hits.length; i++) {
- 
     var card = cardTemplate.clone().removeAttr('id').removeAttr('style');
+    var recipe = data.hits[i].recipe;
 
-  
-    card.find('.recipe-title').html(data.hits[i].recipe.label);
-    card.find('.recipe-image').attr('src', data.hits[i].recipe.image);
-    
+    card.find('.recipe-title').html(recipe.label);
+    card.find('.recipe-image').attr('src', recipe.image);
+    card.find('#recipe-button').attr('data-url', recipe.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
-  
     row.append($('<div class="col"></div>').append(card));
-    card.removeClass('d-none'); 
+    card.removeClass('d-none');
 
     if ((i + 1) % 4 === 0) {
-     
       row = $('<div class="row"></div>');
       recipeCards.append(row);
     }
   }
 }
-
-
-
-
-
-
-
-
-
