@@ -18,37 +18,11 @@ $(document).ready(function() {
 });
 
 async function getRecipeData(searchValue) {
-<<<<<<< HEAD
-    var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=96578cf4&app_key=ef31306002be0ec63784488c0c25e2ce&q=${searchValue}`)
-    const data = await response.json();
-    console.log(data);
-    return data;
-    
-}
-
-
-
-// function displayRecipeData(data){
-  
-//     var ingredients1 = $('.ingredients');
-//     var recipeTitle = $('.recipe-title');
-//     var recipeImage = $('.recipe-image');
-  
-
-    
-//     recipeTitle.html(data.hits[0].recipe.label);
-    
-//     ingredients1.html(data.hits[0].recipe.ingredientLines.join(", ")); //Maybe turn the ingredients into a list using innerhtml right now it is a block of text?
-  
-//     recipeImage.attr('src', data.hits[0].recipe.image);
-// }
-=======
   var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=dc308d27&app_key=4b945e27454211b058c8f59d82bef0cd&q=${searchValue}`);
   var data = await response.json();
   console.log(data);
   return data;
 }
->>>>>>> 35fc9a95ec9f501470cb777541ac0425a9af62cf
 
 function displayRecipeData(data) {
   var recipeCards = $('#recipe-cards');

@@ -81,6 +81,13 @@ header a{
   color: rgb(245, 245, 245);
 }
 
+.nav-link {
+  color: white;
+}
+
+a{
+  color: white !important;
+}
 .form-inline{
   justify-content: center;
   margin-top: 20px;
@@ -210,6 +217,10 @@ ul{
   margin-top: 126px;;
 }
 
+#recipe-button{
+  background-color: #5ea572;
+}
+
 
 .grid-container{
   margin-top: 30px !important;
@@ -230,7 +241,6 @@ ul{
   border: 1px solid #c9c9c9;
   border-radius: 7px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
   
 }
 
