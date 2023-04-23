@@ -1,21 +1,21 @@
 
 
+
 // var button = document.getElementById("search-button")
 // var search = $("#search-input")
 
 
-button.addEventListener("click",function(event){
-    event.preventDefault();
-    window.location.href = "recipes.html";
-    document.style.display = 'none';
-    var currentVal = search.val();
+// button.addEventListener("click", function(event) {
+//     event.preventDefault();
+//     window.location.href = "recipes.html";
+//     var searchValue = search.value;
 
-    getRecipeData(currentVal).then(function(data){
-        
-    });
+//     getRecipeData(searchValue).then(function(data){
+//       displayRecipeData(data);
+//     })
+    
 
-
-});
+//   });
 
 
 // async function getRecipeData(searchValue) {
