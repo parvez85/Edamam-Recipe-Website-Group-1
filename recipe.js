@@ -1,45 +1,27 @@
-
-
-var button = document.getElementById("search-button")
-var search = document.getElementById("search-input")
-
-
+var button = document.getElementById("search-button");
+var search = document.getElementById("search-input");
 
 button.addEventListener("click", function(event) {
-    event.preventDefault();
-    var searchValue = search.value;
+  event.preventDefault();
+  var searchValue = search.value;
+  window.location.href = "recipes.html?q=" + searchValue;
+});
 
-    getRecipeData(searchValue).then(function(data){
-      displayRecipeData(data);
-    })
-    
-
+$(document).ready(function() {
+  var queryString = window.location.search;
+  var urlParams = new URLSearchParams(queryString);
+  var searchValue = urlParams.get('q');
+  
+  getRecipeData(searchValue).then(function(data) {
+    displayRecipeData(data);
   });
-
+});
 
 async function getRecipeData(searchValue) {
-    var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=96578cf4&app_key=ef31306002be0ec63784488c0c25e2ce&q=${searchValue}`)
-    const data = await response.json();
-    console.log(data);
-    return data;
-    
-}
-
-
-
-function displayRecipeData(data){
-  
-    var ingredients1 = $('.ingredients');
-    var recipeTitle = $('.recipe-title');
-    var recipeImage = $('.recipe-image');
-  
-
-    
-    recipeTitle.html(data.hits[0].recipe.label);
-    
-    ingredients1.html(data.hits[0].recipe.ingredientLines.join(", ")); //Maybe turn the ingredients into a list using innerhtml right now it is a block of text?
-  
-    recipeImage.attr('src', data.hits[0].recipe.image);
+  var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=dc308d27&app_key=4b945e27454211b058c8f59d82bef0cd&q=${searchValue}`);
+  var data = await response.json();
+  console.log(data);
+  return data;
 }
 
 function displayRecipeData(data) {
@@ -50,7 +32,7 @@ function displayRecipeData(data) {
 
   var row = $('<div class="row"></div>');
   recipeCards.append(row);
-  
+
   for (var i = 0; i < data.hits.length; i++) {
     var card = cardTemplate.clone().removeAttr('id').removeAttr('style');
     var recipe = data.hits[i].recipe;
