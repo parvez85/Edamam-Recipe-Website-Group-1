@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="recipe.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src= "https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <title>Recipe results</title>
@@ -55,21 +56,21 @@
   
   
   <div class="grid-container">
-    <div class="row row-cols-4  " id="recipe-cards">
+    <div class="row row-cols-4 " id="recipe-cards">
       <!-- Cards will be dynamically added here -->
     </div>
   </div>
   
   <!-- Card template (hidden) -->
   <div id="card-template" style="display:none;">
-    <div class="card flex-fill">
-      <img class="recipe-image img-fluid" src="" class="card-img-top" alt="...">
+    <div class="card flex-fill" style="width: 20rem; height: 26rem;" id="recipe-button">
+      <img  class="recipe-image img-fluid" src="" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="recipe-title"></h5>
         <!-- <p class="ingredients"></p> -->
-        <a>
+        <!-- <a>
           <button class="btn my-2 my-sm-0" target="blank" id="recipe-button">Click Here <a href="#"> </button>
-        </a>
+        </a> -->
         </form>
       </div>
     </div>
