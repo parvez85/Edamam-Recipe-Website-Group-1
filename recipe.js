@@ -27,20 +27,20 @@ async function getRecipeData(searchValue) {
 
 
 
-function displayRecipeData(data){
+// function displayRecipeData(data){
   
-    var ingredients1 = $('.ingredients');
-    var recipeTitle = $('.recipe-title');
-    var recipeImage = $('.recipe-image');
+//     var ingredients1 = $('.ingredients');
+//     var recipeTitle = $('.recipe-title');
+//     var recipeImage = $('.recipe-image');
   
 
     
-    recipeTitle.html(data.hits[0].recipe.label);
+//     recipeTitle.html(data.hits[0].recipe.label);
     
-    ingredients1.html(data.hits[0].recipe.ingredientLines.join(", ")); //Maybe turn the ingredients into a list using innerhtml right now it is a block of text?
+//     ingredients1.html(data.hits[0].recipe.ingredientLines.join(", ")); //Maybe turn the ingredients into a list using innerhtml right now it is a block of text?
   
-    recipeImage.attr('src', data.hits[0].recipe.image);
-}
+//     recipeImage.attr('src', data.hits[0].recipe.image);
+// }
 
 function displayRecipeData(data) {
   var recipeCards = $('#recipe-cards');

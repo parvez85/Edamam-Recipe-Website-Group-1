@@ -1,4 +1,3 @@
-/* external css: flickity.css */
 
 * {
     -webkit-box-sizing: border-box;
@@ -7,10 +6,15 @@
 
   body { 
     font-family: sans-serif;
-    min-height: 100%;
-    overflow: auto;
+    max-height: 100%;
+    overflow:auto;
+    scroll-behavior: smooth;
   }
 
+  ::-webkit-scrollbar { 
+    display: none; 
+ }
+ 
   .carousel {
     background: #EEE;
   }
@@ -96,11 +100,23 @@ header a{
 .form-control{
   width: 400px !important ;
   height: 45px;
+
 }
 
 #about-section{
   padding-top: 50px;
+  display: flex;
  
+}
+
+.about-row{
+  display: flex;
+  justify-content: center;
+  align-self:center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+  
 }
 
 .lead {
@@ -109,34 +125,19 @@ header a{
 }
 
 .about-container{
-  margin-left: 172px;
-  margin-right: -150px;
+  /* margin-left: 172px;
+  margin-right: -150px; */
+  margin: 0
+
+
 }
+
 #popular-recipes{
   padding: 30px;
 }
 
-#main-footer{
-  background-color: #5DB075;
-}
 
-.logo-footer{
-  padding-bottom: 15px;
-}
-
-#main-footer p{
-  color: white;
-}
-
-#main-footer .btn{
-  color: #5DB075;
-  background-color: white;
-}
-#main-footer .btn:hover{
-  background-color: #e2e7e3
-}
-
-.form-control2{
+.nutrional-form{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -171,9 +172,7 @@ header a{
 }
 
 li {
-  
-  list-style: none;
-  
+  list-style: none; 
 }
 
 ul{
@@ -188,7 +187,7 @@ ul{
 
 #image-cont{
   display: flex;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 .left{
   width: 360px;
@@ -214,21 +213,26 @@ ul{
 
 .grid-container{
   margin-top: 30px !important;
-  margin: 0 auto;
-  display: grid;
+  /* margin: 0 auto;
+  display: grid; */
   
 }
 
-#recipe-cards{
+/* #recipe-cards{
   display: grid;
   grid-gap: 20px;
-}
+} */
 
 .card{
+  
   margin: 10px;
   padding: 15px;
   border: 1px solid #c9c9c9;
   border-radius: 7px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
   
 }
+
+
+
