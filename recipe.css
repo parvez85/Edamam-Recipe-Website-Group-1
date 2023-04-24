@@ -36,12 +36,14 @@ body{
     display: grid !important;
   }
   
-  .card:hover{
+  .card:hover {
     border: 4px solid #59a341;
-    text-decoration: 1px underline rgba(0, 0, 0, 0.658); 
+    cursor: pointer;
   }  
 
-
+  .card:hover .recipe-title{
+    text-decoration: 1px underline rgba(0, 0, 0, 0.658); 
+  }
 
   .card img{
     border-bottom: 1px solid #c9c9c9;
@@ -54,8 +56,8 @@ body{
     margin-left: 18px;
     margin-top: 10px !important;
     padding: 0% !important;
-    color: #194737; 
-    
+    color: #194737de;  
   }
-  
+
+
  
