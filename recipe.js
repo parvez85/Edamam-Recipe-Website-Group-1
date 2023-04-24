@@ -39,6 +39,7 @@ function displayRecipeData(data) {
 
     card.find('.recipe-title').html(recipe.label);
     card.find('.recipe-image').attr('src', recipe.image);
+    card.find('.cuisine').html(recipe.cuisineType.join(" / "));
     card.find('#recipe-button').attr('data-url', recipe.url).on('click', function() {
       var url = $(this).data('url');
       window.open(url, '_blank');
@@ -47,7 +48,7 @@ function displayRecipeData(data) {
     row.append($('<div class="col"></div>').append(card));
     card.removeClass('d-none');
 
-    if ((i + 1) % 4 === 0) {
+    if ((i + 1) % 5 === 0) {
       row = $('<div class="row"></div>');
       recipeCards.append(row);
     }

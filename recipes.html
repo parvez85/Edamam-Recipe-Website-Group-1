@@ -44,7 +44,7 @@
 
   <div id="search-bar">
     <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+      <input class="form-control mr-sm-2" type="search" placeholder="Find a recipe" aria-label="Search" id="search-input">
       <a href="recipes.html">
           <button class="btn my-2 my-sm-0" type="submit" id="search-button">Search <a href="recipes.html"></button>
       </a>
@@ -56,15 +56,16 @@
   
   
   <div class="grid-container">
-    <div class="row row-cols-4 " id="recipe-cards">
+    <div class="row row-cols-4 col-xs-12 col-md-6 col-lg-3" id="recipe-cards">
       <!-- Cards will be dynamically added here -->
     </div>
   </div>
   
   <!-- Card template (hidden) -->
   <div id="card-template" style="display:none;">
-    <div class="card flex-fill" style="width: 20rem; height: 26rem;" id="recipe-button">
+    <div class="card " style="width: 16rem; height: 25rem;" id="recipe-button">
       <img  class="recipe-image img-fluid" src="" class="card-img-top" alt="...">
+      <span class="cuisine"></span>
       <div class="card-body">
         <h5 class="recipe-title"></h5>
         <!-- <p class="ingredients"></p> -->
