@@ -2,7 +2,7 @@
 $(document).ready(function() {
     var queryString = window.location.search;
     var urlParams = new URLSearchParams(queryString);
-    var searchValue = urlParams.get('q');
+    var searchValue = urlParams.get('value');
 
 
     getFooterRecipeData(searchValue).then(function(data) {

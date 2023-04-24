@@ -10,7 +10,7 @@ button.addEventListener("click", function(event) {
 $(document).ready(function() {
   var queryString = window.location.search;
   var urlParams = new URLSearchParams(queryString);
-  var searchValue = urlParams.get('value');
+  var searchValue = urlParams.get('q');
   
   getRecipeData(searchValue).then(function(data) {
     displayRecipeData(data);
