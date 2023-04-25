@@ -78,3 +78,38 @@ button.addEventListener("click",function(event){
 
 
 });
+function getNutritionalData(input){
+
+  $("#tbodyid").remove();
+  $("#theadid").remove();
+    var inputArr=input.split(',')
+    var table = $('<table>').addClass('center');
+    var thead = $('<thead>').attr('id','theadid');
+    var tbody = $('<tbody>').attr('id','tbodyid');
+    var header = $('<tr>');
+    var cell1 = $('<th>').text('Quantity');
+    var cell2 = $('<th>').text('Unit');
+    var cell3 = $('<th>').text('Food');
+    var cell4 = $('<th>').text('Calories(Kcal)');
+    var cell5 = $('<th>').text('Weight(g)');
+    header.append(cell1).append(cell2).append(cell3).append(cell4).append(cell5);
+    thead.append(header);
+    table.append(thead);
+    for (var j = 0; j < inputArr.length; j++) { 
+     
+      var q=encodeURI(inputArr[j]);
+      //var queryURL = "https://api.edamam.com/api/nutrition-data?app_id=2b0b36a4&app_key=84650e5de19523e1f4e7cbdcdd44b20b&nutrition-type=cooking&ingr="+q;
+      getNutritionData(q).then(function (data) {      
+      var row = $('<tr>');
+      var cell1 = $('<td>').text(data.ingredients[0].parsed[0].quantity);
+      var cell2 = $('<td>').text(data.ingredients[0].parsed[0].measure);
+      var cell3 = $('<td>').text(data.ingredients[0].parsed[0].food);
+      var cell4 = $('<td>').text(data.calories);
+      var cell5 = $('<td>').text(data.ingredients[0].parsed[0].weight); 
+      row.append(cell1).append(cell2).append(cell3).append(cell4).append(cell5);
+      tbody.append(row);  
+      });
+    }
+      table.append(tbody);
+      $("#textarea").append(table);
+};
