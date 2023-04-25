@@ -117,4 +117,5 @@ async function getNutritionData(searchValue) {
   var response = await fetch(`https://api.edamam.com/api/nutrition-data?app_id=2112a5a9&app_key=23e2e4ce3ed3f6ede140a4099e207922&nutrition-type=cooking&ingr=${searchValue}`);
   var data = await response.json();
   console.log(data);
+  return data;
 }
