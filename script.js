@@ -119,3 +119,46 @@ async function getNutritionData(searchValue) {
   console.log(data);
   return data;
 }
+
+var apiKey = "4b945e27454211b058c8f59d82bef0cd";
+  var appID = "dc308d27";
+  var carousel = document.querySelector('.carousel');
+  
+  function getRandomRecipes() {
+    var url = "https://api.edamam.com/api/recipes/v2?type=public&q=random&app_id=" + appID + "&app_key=" + apiKey;
+    fetch(url)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        var recipes = data.hits.map(function(hit) {
+          return hit.recipe;
+        }).slice(0, 5);
+        var recipeCells = recipes.map(function(recipe) {
+          var cell = document.createElement('div');
+          cell.classList.add('carousel-cell');
+          var title = document.createElement('h2');
+          title.textContent = recipe.label;
+          var image = document.createElement('img');
+          image.src = recipe.image;
+          var link = document.createElement('a');
+          link.href = recipe.url;
+          link.target = '_blank';
+          link.appendChild(image);
+          cell.appendChild(title);
+          cell.appendChild(link);
+          return cell;
+        });
+        carousel.innerHTML = '';
+        recipeCells.forEach(function(cell) {
+          carousel.appendChild(cell);
+        });
+        new Flickity(carousel);
+      })
+      .catch(function(error) {
+        console.error(error);
+      });
+  }
+  
+  getRandomRecipes();
+  
