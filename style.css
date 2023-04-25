@@ -7,7 +7,7 @@
   }
 
   body { 
-    font-family: sans-serif !important;
+    font-family: sans-serif ;
     max-height: 100%;
     overflow:auto;
     scroll-behavior: smooth;
