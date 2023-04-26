@@ -149,7 +149,7 @@ next.addEventListener("click", function (e) {
 prev.addEventListener("click", function () {
   index = index - 1;
   next.style.right = "-34px";
-  carousel.style.width = "900px"
+  carousel.style.width = "70%"
   next.classList.remove("show");
   if (index === 0) {
     prev.classList.remove("show");
