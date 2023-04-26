@@ -53,7 +53,7 @@ async function getFooterRecipeData(searchValue) {
   // nutritional analysis
 
   var button1 = document.getElementById("search-button");
-var search1 = document.getElementById("search-input");
+  var search1 = document.getElementById("search-input");
 
 button1.addEventListener("click", function(event) {
   event.preventDefault();
@@ -62,22 +62,21 @@ button1.addEventListener("click", function(event) {
 });
 
 
-var button = document.getElementById("analyse-btn");
+var button2 = document.getElementById("analyse-btn");
 var search = document.getElementById("exampleFormControlTextarea1");
 
 
-button.addEventListener("click",function(event){
+button2.addEventListener("click",function(event){
     
     event.preventDefault();
     // window.location.href = "recipes.html";
    
     var searchValue = search.value;
 
-    getNutritionalData(searchValue)
-    
-
+    getNutritionalData(searchValue)  
 
 });
+
 function getNutritionalData(input){
 
   $("#tbodyid").remove();
