@@ -270,26 +270,6 @@ margin-top: 30px;
 margin-top: 60px;
 }
 
-/*
-#nutrional-values{
-text-align: left;
-padding: 10px;
-} */
-
-
-
-/* * { box-sizing: border-box; } */
-
-/* .recipe-card{
-background-color: #4E7597;
-border-radius: 5px;
-height: 300px;
-width: 400px;
-padding-left: 10px;
-padding-top: 5px;
-margin-top: 15px;
-box-shadow: 4px 5px 15px #00000083;
-} */
 
 li {
 list-style: none; 
@@ -393,8 +373,8 @@ opacity : 0;
   /* position: absolute; */
   /* top: 0;
   left: 0; */
-  width: 70%;
-  height: 330px;
+  width: 80%;
+  height: 340px;
   /* display: flex;
   align-content: center;
   justify-content: center; */
@@ -418,7 +398,7 @@ opacity : 0;
   top: 0;
   left:0;
   width: 100%;
-  height: 330px;;
+  height: 340px;;
   background: rgba(0, 0, 0, 0.5) ;
   border-radius: 10px;
 }
@@ -508,7 +488,7 @@ color: white;
 font-size: 45px;
 font-weight: 700;
 text-align: center;
-margin-top: 40px;
+margin-top: 43px;
 }
 
 #news{
