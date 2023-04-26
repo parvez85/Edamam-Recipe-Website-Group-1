@@ -160,7 +160,7 @@ getPopularRecipes().then(function(data){
 
   
   async function getPopularRecipes() {
-    var response = await fetch("https://api.edamam.com/api/recipes/v2?type=public&app_id=96578cf4&app_key=ef31306002be0ec63784488c0c25e2ce&mealType=Dinner");
+    var response = await fetch("https://api.edamam.com/api/recipes/v2?type=public&app_id=dc308d27&app_key=4b945e27454211b058c8f59d82bef0cd&mealType=Dinner");
     const data = await response.json();
     console.log(data);
     return data;
@@ -198,77 +198,102 @@ function displayPopularRecipes(data){
     var img3 = $(".recipe-image3");
     var cuisine3 = $('.cuisine3');
     var title3 = $('.recipe-title3');
+    var link3 = $(".recipe-link3");
     var recipe3 = data.hits[2].recipe;
-    
-    title3.html(recipe3.label)
-    img3.attr('src', recipe3.image)
-    cuisine3.html(recipe3.cuisineType.join(" / "))
+    console.log(recipe3)
+    title3.html(recipe3.label);
+    img3.attr('src', recipe3.image);
+    cuisine3.html(recipe3.cuisineType.join(" / "));
+    link3.attr('href', recipe3.url);
+    link3.attr('target', '_blank');
 
 
     var img4 = $(".recipe-image4");
     var cuisine4 = $('.cuisine4');
     var title4 = $('.recipe-title4');
+    var link4 = $(".recipe-link4");
     var recipe4 = data.hits[3].recipe;
-
-    title4.html(recipe4.label)
-    img4.attr('src', recipe4.image)
-    cuisine4.html(recipe4.cuisineType.join(" / "))
+    console.log(recipe4)
+    title4.html(recipe4.label);
+    img4.attr('src', recipe4.image);
+    cuisine4.html(recipe4.cuisineType.join(" / "));
+    link4.attr('href', recipe4.url);
+    link4.attr('target', '_blank');
 
 
     var img5 = $(".recipe-image5");
     var cuisine5 = $('.cuisine5');
     var title5 = $('.recipe-title5');
+    var link5 = $(".recipe-link5");
     var recipe5 = data.hits[4].recipe;
-
-    title5.html(recipe5.label)
-    img5.attr('src', recipe5.image)
-    cuisine5.html(recipe5.cuisineType.join(" / "))
+    console.log(recipe5)
+    title5.html(recipe2.label);
+    img5.attr('src', recipe5.image);
+    cuisine5.html(recipe5.cuisineType.join(" / "));
+    link5.attr('href', recipe5.url);
+    link5.attr('target', '_blank');
 
 
     var img6 = $(".recipe-image6");
     var cuisine6 = $('.cuisine6');
     var title6 = $('.recipe-title6');
+    var link6 = $(".recipe-link6");
     var recipe6 = data.hits[5].recipe;
+    console.log(recipe6)
+    title6.html(recipe6.label);
+    img6.attr('src', recipe6.image);
+    cuisine6.html(recipe6.cuisineType.join(" / "));
+    link6.attr('href', recipe6.url);
+    link6.attr('target', '_blank');
 
-    title6.html(recipe6.label)
-    img6.attr('src', recipe6.image)
-    cuisine6.html(recipe6.cuisineType.join(" / "))
 
     var img7 = $(".recipe-image7");
     var cuisine7 = $('.cuisine7');
     var title7 = $('.recipe-title7');
+    var link7 = $(".recipe-link7");
     var recipe7 = data.hits[6].recipe;
-
-    title7.html(recipe7.label)
-    img7.attr('src', recipe7.image)
-    cuisine7.html(recipe7.cuisineType.join(" / "))
+    console.log(recipe7)
+    title7.html(recipe7.label);
+    img7.attr('src', recipe7.image);
+    cuisine7.html(recipe7.cuisineType.join(" / "));
+    link7.attr('href', recipe7.url);
+    link7.attr('target', '_blank');
 
     var img8 = $(".recipe-image8");
     var cuisine8 = $('.cuisine8');
     var title8 = $('.recipe-title8');
+    var link8 = $(".recipe-link8");
     var recipe8 = data.hits[7].recipe;
+    console.log(recipe8)
+    title8.html(recipe8.label);
+    img8.attr('src', recipe8.image);
+    cuisine8.html(recipe8.cuisineType.join(" / "));
+    link8.attr('href', recipe8.url);
+    link8.attr('target', '_blank');
 
-    title8.html(recipe8.label)
-    img8.attr('src', recipe8.image)
-    cuisine8.html(recipe8.cuisineType.join(" / "))
-
-    var img9= $(".recipe-image9");
+    var img9 = $(".recipe-image9");
     var cuisine9 = $('.cuisine9');
     var title9 = $('.recipe-title9');
-    var recipe9 = data.hits[8].recipe;
-
-    title9.html(recipe9.label)
-    img9.attr('src', recipe9.image)
-    cuisine9.html(recipe9.cuisineType.join(" / "))
+    var link9 = $(".recipe-link9");
+    var recipe9 = data.hits[1].recipe;
+    console.log(recipe9)
+    title9.html(recipe9.label);
+    img9.attr('src', recipe9.image);
+    cuisine9.html(recipe9.cuisineType.join(" / "));
+    link9.attr('href', recipe9.url);
+    link9.attr('target', '_blank');
 
     var img10 = $(".recipe-image10");
     var cuisine10 = $('.cuisine10');
     var title10 = $('.recipe-title10');
+    var link10 = $(".recipe-link10");
     var recipe10 = data.hits[9].recipe;
-
-    title10.html(recipe10.label)
-    img10.attr('src', recipe10.image)
-    cuisine10.html(recipe10.cuisineType.join(" / "))
+    console.log(recipe10)
+    title10.html(recipe10.label);
+    img10.attr('src', recipe10.image);
+    cuisine10.html(recipe10.cuisineType.join(" / "));
+    link10.attr('href', recipe10.url);
+    link10.attr('target', '_blank');
 
 }
 
