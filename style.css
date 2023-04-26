@@ -24,7 +24,7 @@ img {
   max-width: 100%;
 }
 .carousel-container {
-  width: 1369px;
+  width: 1350px;
   margin: 50px auto;
   position: relative;
   /* border-left-style: solid; */
@@ -46,7 +46,7 @@ img {
   transition: transform 0.2s ease-in-out;
 }
 .card-container {
-  width: 275px;
+  width: 271px;
   height: 400px;
   flex-shrink: 0;
   padding-right: 10px;
@@ -93,22 +93,22 @@ span{
 }
 .nav .prev {
   left: -40px;
-  color: black;
+  color: #1f7256;
 }
 .nav .prev.show {
   display: block;
 }
 .nav .next {
   right: -40px;
-  color: black;
+  color: #1f7256;
 }
 
 .nav .next:hover{
-  color:#5db07494;
+  color:#5db074a8;
 }
 
 .nav .prev:hover{
-  color:#5db07494;
+  color:#5db074a8;
 }
 
 #img{
@@ -194,7 +194,11 @@ height: 45px;
 padding-top: 50px;
 display: flex;
 margin-bottom: 50px;
+}
 
+#about-us{
+  text-decoration: underline;
+  text-decoration-color: #FFC035;
 }
 
 .about-row{
@@ -204,7 +208,6 @@ align-self:center;
 flex-wrap: wrap;
 margin-left: 50px;
 margin-right: 50px;
-
 }
 
 .lead {
@@ -216,8 +219,6 @@ font-weight: 300;
 /* margin-left: 172px;
 margin-right: -150px; */
 margin: 0
-
-
 }
 
 #popular-recipes{
@@ -231,7 +232,14 @@ text-align: center;
 #popular-title{
   color: black;
   text-decoration: underline;
+  text-decoration-color: #5DB075;
+  text-align: left;
+  padding-left: 10px;
 }
+
+/* #nutritional-section{
+  margin-top: 30px;
+} */
 
 .nutritional-form{
 display: block;
@@ -244,6 +252,12 @@ height: 300px;
 #nutritional-card{
 border-style: none !important;
 box-shadow: none !important;
+margin-top: 30px;
+}
+
+#nutritional-values{
+  text-decoration: underline;
+  text-decoration-color: #FFC035;
 }
 
 #logo2{

@@ -137,7 +137,7 @@ next.addEventListener("click", function (e) {
   e.preventDefault();
   index = index + 1;
   prev.classList.add("show");
-  track.style.transform = "translateX(-1369px)";
+  track.style.transform = "translateX(-1350px)";
   if (track.offsetWidth - index * width < index * width) {
     next.classList.add("show");
   }
