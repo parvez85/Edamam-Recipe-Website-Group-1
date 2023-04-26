@@ -178,14 +178,16 @@ function displayPopularRecipes(data){
     var cuisine1 = $('.cuisine1');
     var title1 = $('.recipe-title1');
     var link1 = $(".recipe-link1");
-    var recipe1 = data.hits[0].recipe;
-    console.log(recipe1)
+    var recipe1 = data.hits[15].recipe;
+    // console.log(recipe1)
     title1.html(recipe1.label);
     img1.attr('src', recipe1.image);
     cuisine1.html(recipe1.cuisineType.join(" / "));
-    link1.attr('href', recipe1.url);
-    link1.attr('target', '_blank');
-  
+
+    link1.attr('data-url', recipe1.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
     var img2 = $(".recipe-image2");
     var cuisine2 = $('.cuisine2');
@@ -196,9 +198,11 @@ function displayPopularRecipes(data){
     title2.html(recipe2.label);
     img2.attr('src', recipe2.image);
     cuisine2.html(recipe2.cuisineType.join(" / "));
-    link2.attr('href', recipe2.url);
-    link2.attr('target', '_blank');
 
+    link2.attr('data-url', recipe2.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
     var img3 = $(".recipe-image3");
     var cuisine3 = $('.cuisine3');
@@ -209,8 +213,11 @@ function displayPopularRecipes(data){
     title3.html(recipe3.label);
     img3.attr('src', recipe3.image);
     cuisine3.html(recipe3.cuisineType.join(" / "));
-    link3.attr('href', recipe3.url);
-    link3.attr('target', '_blank');
+
+    link3.attr('data-url', recipe3.url).on('click', function() {
+    var url = $(this).data('url');
+    window.open(url, '_blank');
+   });
 
 
     var img4 = $(".recipe-image4");
@@ -222,9 +229,11 @@ function displayPopularRecipes(data){
     title4.html(recipe4.label);
     img4.attr('src', recipe4.image);
     cuisine4.html(recipe4.cuisineType.join(" / "));
-    link4.attr('href', recipe4.url);
-    link4.attr('target', '_blank');
 
+    link4.attr('data-url', recipe4.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
     var img5 = $(".recipe-image5");
     var cuisine5 = $('.cuisine5');
@@ -235,9 +244,11 @@ function displayPopularRecipes(data){
     title5.html(recipe2.label);
     img5.attr('src', recipe5.image);
     cuisine5.html(recipe5.cuisineType.join(" / "));
-    link5.attr('href', recipe5.url);
-    link5.attr('target', '_blank');
 
+    link5.attr('data-url', recipe5.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
     var img6 = $(".recipe-image6");
     var cuisine6 = $('.cuisine6');
@@ -248,8 +259,11 @@ function displayPopularRecipes(data){
     title6.html(recipe6.label);
     img6.attr('src', recipe6.image);
     cuisine6.html(recipe6.cuisineType.join(" / "));
-    link6.attr('href', recipe6.url);
-    link6.attr('target', '_blank');
+
+    link6.attr('data-url', recipe6.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
 
     var img7 = $(".recipe-image7");
@@ -261,8 +275,11 @@ function displayPopularRecipes(data){
     title7.html(recipe7.label);
     img7.attr('src', recipe7.image);
     cuisine7.html(recipe7.cuisineType.join(" / "));
-    link7.attr('href', recipe7.url);
-    link7.attr('target', '_blank');
+
+    link7.attr('data-url', recipe7.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
     var img8 = $(".recipe-image8");
     var cuisine8 = $('.cuisine8');
@@ -273,20 +290,26 @@ function displayPopularRecipes(data){
     title8.html(recipe8.label);
     img8.attr('src', recipe8.image);
     cuisine8.html(recipe8.cuisineType.join(" / "));
-    link8.attr('href', recipe8.url);
-    link8.attr('target', '_blank');
+
+    link8.attr('data-url', recipe8.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
     var img9 = $(".recipe-image9");
     var cuisine9 = $('.cuisine9');
     var title9 = $('.recipe-title9');
     var link9 = $(".recipe-link9");
-    var recipe9 = data.hits[1].recipe;
+    var recipe9 = data.hits[12].recipe;
     console.log(recipe9)
     title9.html(recipe9.label);
     img9.attr('src', recipe9.image);
     cuisine9.html(recipe9.cuisineType.join(" / "));
-    link9.attr('href', recipe9.url);
-    link9.attr('target', '_blank');
+
+    link9.attr('data-url', recipe9.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
     var img10 = $(".recipe-image10");
     var cuisine10 = $('.cuisine10');
@@ -297,8 +320,11 @@ function displayPopularRecipes(data){
     title10.html(recipe10.label);
     img10.attr('src', recipe10.image);
     cuisine10.html(recipe10.cuisineType.join(" / "));
-    link10.attr('href', recipe10.url);
-    link10.attr('target', '_blank');
+
+    link10.attr('data-url', recipe10.url).on('click', function() {
+      var url = $(this).data('url');
+      window.open(url, '_blank');
+    });
 
 }
 
