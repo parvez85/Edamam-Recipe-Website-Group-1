@@ -14,44 +14,106 @@ body {
   margin: 44px auto 0;
 }
 
-/* ::-webkit-scrollbar { 
-  display: none; 
-} */
 
-.carousel {
-background: #eee;
-display: flex;
-flex-wrap: nowrap;
-overflow-x: auto;
-scroll-behavior: smooth; 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.carousel-container {
+  width: 1369px;
+  margin: 50px auto;
+  position: relative;
+  /* border-left-style: solid; */
+  border-left-color: #aaa;
+}
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 95%;
+  }
+}
+.inner-carousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.track {
+  display: inline-flex;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+.card-container {
+  width: 275px;
+  height: 400px;
+  flex-shrink: 0;
+  padding-right: 10px;
 }
 
-.carousel-cell {
-font-size: 50% !important;;
-width: 30%;
-height: 300px;
-margin-right: 10px;
-/* background: #8c8; */
-border-radius: 5px;
-counter-increment: gallery-cell;
-
+@media (max-width: 768px) {
+  .card-container {
+    width: 184px;
+  }
 }
-.carousel-cell img {
-width: 100%; 
-
+.card {
+  width: 100%;
+  height: 93%;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  background-position: center bottom;
+  background-size: center;
+  background-repeat: no-repeat;
+  border-radius: 0.25rem;
 }
 
 
-/* cell number */
-/* .carousel-cell:before {
-display: block;
-text-align: center;
-content: counter(gallery-cell);
-line-height: 200px;
-font-size: 80px;
-color: white;
-} */
 
+span{
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  
+}
+
+.nav button {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background-color: white;
+}
+.nav .prev {
+  left: -40px;
+  color: black;
+}
+.nav .prev.show {
+  display: block;
+}
+.nav .next {
+  right: -40px;
+  color: black;
+}
+
+.nav .next:hover{
+  color:#5db07494;
+}
+
+.nav .prev:hover{
+  color:#5db07494;
+}
+
+#img{
+  border-radius: 0.25rem 0.25rem 0px 0px;
+}
 
 #home-section{
   background: url(Assets/Images/bg4.jpg);
@@ -111,6 +173,7 @@ margin-top: 20px;
 #search-bar{
 margin-top: 120px;
 }
+
 #search-button{
 background-color:#5DB075 ;
 color: white;
@@ -125,12 +188,12 @@ background-color: #5ea572;
 .form-control{
 width: 400px !important ;
 height: 45px;
-
 }
 
 #about-section{
 padding-top: 50px;
 display: flex;
+margin-bottom: 50px;
 
 }
 
@@ -159,8 +222,16 @@ margin: 0
 
 #popular-recipes{
 padding: 30px;
+background-color: #FFC035;
+height: 600px;
+color: #000;
+text-align: center;
 }
 
+#popular-title{
+  color: black;
+  text-decoration: underline;
+}
 
 .nutritional-form{
 display: block;
