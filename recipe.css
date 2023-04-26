@@ -63,8 +63,8 @@ body{
   margin-left: 0;
   width: 1.55rem !important;
   height: 1.55rem !important;
-  stroke: white !important; 
-  color: white !important;
+  /* stroke: white !important;  */
+  color: white ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,8 +86,19 @@ body{
   top: 0;
   right: 0;
   margin: 10px;
+  outline: none;
 }
 
 .fa,.fas{
-  font-weight:lighter !important;
+  font-weight:bold !important;
 }
+
+#icon:hover {
+  color: rgb(189, 45, 45);
+ 
+}
+
+/* .fa-heart::before{
+  color: blue;
+} */
+

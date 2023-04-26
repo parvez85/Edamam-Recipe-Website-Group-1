@@ -15,7 +15,33 @@ $(document).ready(function() {
   getRecipeData(searchValue).then(function(data) {
     displayRecipeData(data);
   });
+
+  //Favourite button:
+
+  // var icon = $("#icon")
+  // var likeButton = $("#icon-btn");
+
+  // likeButton.addEventListener("click", (e) => {
+  //   e.preventDefault();
+  //   console.log(e.target.className)
+  // })
+
+  // var likeBtn = document.querySelectorAll("#icon-btn");
+  // let getHearts = document.querySelectorAll('#icon') //get all elements
+
+  // getHearts.forEach(function(span) {
+  //   span.addEventListener('click', function(e) {
+  //     if (e.target.style.color == 'red') {
+  //       e.target.style.color = 'grey';
+  //     } else {
+  //       e.target.style.color = 'red';
+  //     }
+  //   });
+  // })
+
 });
+
+
 
 async function getRecipeData(searchValue) {
   var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=dc308d27&app_key=4b945e27454211b058c8f59d82bef0cd&q=${searchValue}`);
@@ -40,6 +66,7 @@ function displayRecipeData(data) {
     card.find('.recipe-title').html(recipe.label);
     card.find('.recipe-image').attr('src', recipe.image);
     card.find('.cuisine').html(recipe.cuisineType.join(" / "));
+
     card.find('#recipe-button').attr('data-url', recipe.url).on('click', function() {
       var url = $(this).data('url');
       window.open(url, '_blank');
@@ -54,4 +81,6 @@ function displayRecipeData(data) {
     }
   }
 }
+
+
 
