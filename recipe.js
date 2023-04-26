@@ -38,6 +38,15 @@ $(document).ready(function() {
   //     }
   //   });
   // })
+  
+  // var icon = document.getElementById("icon");
+
+  // icon.addEventListener("click", function(event) {
+  //   event.preventDefault();
+    
+  //   icon.style.color = 'red';
+
+  // });
 
 });
 

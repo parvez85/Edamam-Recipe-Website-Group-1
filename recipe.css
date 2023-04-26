@@ -63,13 +63,13 @@ body{
   margin-left: 0;
   width: 1.55rem !important;
   height: 1.55rem !important;
-  /* stroke: white !important;  */
+  /* stroke: white ;  */
   color: white ;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-
+  cursor: pointer;
 }
 
 #icon-btn{
@@ -93,10 +93,12 @@ body{
   font-weight:bold !important;
 }
 
-#icon:hover {
+
+
+/* #icon:hover {
   color: rgb(189, 45, 45);
  
-}
+} */
 
 /* .fa-heart::before{
   color: blue;

@@ -64,12 +64,12 @@
   
   <!-- Card template (hidden) -->
   <div id="card-template" style="display:none;">
-    <div class="card " style="width: 18rem; height: 26rem;" id="recipe-button">
+    <div class="card " style="width: 18rem; height: 26rem;" id="recipe-button" >
       <img  class="recipe-image img-fluid" style="width: 18rem; height: 15erm;" src="" class="card-img-top" alt="...">
-      <button onclick="event.stopPropagation()"  id="icon-btn" >
+      <button onClick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;" id="icon-btn" >
         <i id="icon" class="fa fa-regular fa-heart fa-lg"></i>
       </button>
-      <span class="cuisine" ></span>
+      <span class="cuisine" ></span>  
       <div class="card-body">
         <h5 class="recipe-title"></h5>
         </form>
