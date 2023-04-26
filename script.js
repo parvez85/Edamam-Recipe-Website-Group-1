@@ -172,21 +172,27 @@ function displayPopularRecipes(data){
     var img1 = $(".recipe-image1");
     var cuisine1 = $('.cuisine1');
     var title1 = $('.recipe-title1');
+    var link1 = $(".recipe-link1");
     var recipe1 = data.hits[0].recipe;
-    
-    title1.html(recipe1.label)
-    img1.attr('src', recipe1.image)
-    cuisine1.html(recipe1.cuisineType.join(" / "))
-
+    console.log(recipe1)
+    title1.html(recipe1.label);
+    img1.attr('src', recipe1.image);
+    cuisine1.html(recipe1.cuisineType.join(" / "));
+    link1.attr('href', recipe1.url);
+    link1.attr('target', '_blank');
+  
 
     var img2 = $(".recipe-image2");
     var cuisine2 = $('.cuisine2');
     var title2 = $('.recipe-title2');
+    var link2 = $(".recipe-link2");
     var recipe2 = data.hits[1].recipe;
-    
-    title2.html(recipe2.label)
-    img2.attr('src', recipe2.image)
-    cuisine2.html(recipe2.cuisineType.join(" / "))
+    console.log(recipe2)
+    title2.html(recipe2.label);
+    img2.attr('src', recipe2.image);
+    cuisine2.html(recipe2.cuisineType.join(" / "));
+    link2.attr('href', recipe2.url);
+    link2.attr('target', '_blank');
 
 
     var img3 = $(".recipe-image3");
