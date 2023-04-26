@@ -136,7 +136,7 @@ next.addEventListener("click", function (e) {
   e.preventDefault();
   index = index + 1;
   prev.classList.add("show");
-  track.style.transform = "translateX(-1350px)";
+  track.style.transform = "translateX(-70%)";
   if (track.offsetWidth - index * width < index * width) {
     next.classList.add("show");
   }
@@ -265,7 +265,12 @@ function displayPopularRecipes(data){
     cuisine10.html(recipe10.cuisineType.join(" / "))
 
 }
-  
+
+//Subscribe
+document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
+  e.preventDefault();
+  document.querySelector('.subscription').classList.add('done');
+});
 
 // var apiKey = "4b945e27454211b058c8f59d82bef0cd";
 //   var appID = "dc308d27";

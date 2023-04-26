@@ -24,7 +24,7 @@ img {
   max-width: 100%;
 }
 .carousel-container {
-  width: 1350px;
+  width: 70%;
   margin: 50px auto;
   position: relative;
   /* border-left-style: solid; */
@@ -50,6 +50,7 @@ img {
   height: 400px;
   flex-shrink: 0;
   padding-right: 10px;
+
 }
 
 @media (max-width: 768px) {
@@ -69,11 +70,11 @@ img {
   background-repeat: no-repeat;
   border-radius: 0.25rem;
   background-color: rgba(255, 255, 255, 0.925);
+
 }
 
 
-
-span{
+.cuisine1, .cuisine2, .cuisine3, .cuisine4, .cuisine5, .cuisine6, .cuisine8, .cuisine8, .cuisin9, .cuisine10{
   padding: 10px;
   text-transform: uppercase;
   font-weight: 600;
@@ -139,7 +140,7 @@ span{
 #home-section .dark-overlay{
   top: 0;
   left:0;
-  width: 100%;
+  width: 100%;  
   min-height: 700px;
   background: rgba(0, 0, 0, 0.5) ;
 }
@@ -304,6 +305,7 @@ margin-left: 60px;
 display: flex;
 margin-left: 10px;
 }
+
 .left{
 width: 360px;
 height: 350px;
@@ -381,4 +383,134 @@ opacity : 0;
 }
 input:-moz-placeholder {
 opacity : 0;
+}
+
+.container-news {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  width: 70%;
+  height: 330px;
+  /* display: flex;
+  align-content: center;
+  justify-content: center; */
+  background-image: url(Assets/Images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 !important;
+  border-radius: 10px;
+  /* margin-left: 50px;
+  margin-right: 50px */
+  display: block;
+  margin: auto;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  /* margin-left: 70px !important;
+  margin-right: 70px !important; */
+}
+
+#dark-overlay{
+  display: grid;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 330px;;
+  background: rgba(0, 0, 0, 0.5) ;
+  border-radius: 10px;
+}
+
+.content {
+  width: 414px;
+  height: 45px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+  border-radius: 60px;
+  overflow: hidden;
+  margin-bottom: 60px !important;
+  display: block;
+  margin: auto;
+}
+
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.subscription .add-email{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  width: 100px;
+  border: none;
+  border-radius: 60px;
+  outline: none;
+  margin: 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #4ABEBB ;
+  color: #FFFFFF;
+  transition: width .35s ease-in-out ;
+}
+
+.subscription.done .submit-email {
+  width: calc(100% - 2px);
+  background: #FFC035;
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 38px;
+  transition: visibility .35s ease-in-out,
+    opacity .35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+  transition-delay: .35s;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+  visibility: visible;
+  opacity: 1;
+}
+
+#sign-up{
+color: white;
+font-size: 45px;
+font-weight: 700;
+text-align: center;
+margin-top: 40px;
+}
+
+#news{
+color: white;
+font-size: 20px;
+text-align: center;
+margin-top: 5px;
+font-weight: 400;
 }
