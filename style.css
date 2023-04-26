@@ -29,10 +29,12 @@ img {
   position: relative;
   /* border-left-style: solid; */
   border-left-color: #aaa;
+  
 }
 @media (max-width: 768px) {
   .carousel-container {
     width: 95%;
+ 
   }
 }
 .inner-carousel {
@@ -97,9 +99,11 @@ img {
   left: -40px;
   color: #1f7256;
 }
+/* 
 .nav .prev.show {
   display: block;
-}
+} */
+
 .nav .next {
   right: -40px;
   color: #1f7256;

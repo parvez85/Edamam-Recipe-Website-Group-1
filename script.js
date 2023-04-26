@@ -128,23 +128,28 @@ const carousel = document.querySelector(".carousel-container");
 const track = document.querySelector(".track");
 let width = carousel.offsetWidth;
 let index = 0;
-window.addEventListener("resize", function () {
-  width = carousel.offsetWidth;
-});
+// window.addEventListener("resize", function () {
+//   width = carousel.offsetWidth;
+// });
 
 next.addEventListener("click", function (e) {
   e.preventDefault();
   index = index + 1;
+  next.style.right = "-34px";
+  carousel.style.width = "80%"
   prev.classList.add("show");
   track.style.transform = "translateX(-70%)";
   if (track.offsetWidth - index * width < index * width) {
     next.classList.add("show");
+
   }
 
   
 });
 prev.addEventListener("click", function () {
   index = index - 1;
+  // next.style.right = "-34px";
+  // carousel.style.width = "50%"
   next.classList.remove("show");
   if (index === 0) {
     prev.classList.remove("show");
