@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
@@ -24,7 +24,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css"
-    />
+    /> -->
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <title>HappyTummy</title>
@@ -73,7 +73,10 @@
     </div>
 </header>
 
+
+
 <!-- About Section -->
+
 <section id="about-section">
   <div class="about-container">
     <div class="about-row">
@@ -94,7 +97,7 @@ Whether you're a seasoned home cook or just getting started in the kitchen, we a
       
     </div>
   </div>
-</section>
+</section>  
 
 
 <!-- Popular Recipe Image Carousel-->
@@ -217,18 +220,6 @@ Whether you're a seasoned home cook or just getting started in the kitchen, we a
     </div>
 </div>
 
-
-<!-- <div id="popular-recipes">
-  <h1 class="display-4">Popular Recipes:</h1>
-  <div class="carousel" data-flickity>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-  </div>
-</div>  -->
-
    
 <!-- Nutritional Values Section -->
 <div id="nutritional-section">
@@ -245,11 +236,39 @@ Whether you're a seasoned home cook or just getting started in the kitchen, we a
   </div>
 </div>
 
+<!-- News Section -->
+
+<hr size="4" width="80%" color="lightgrey">  
+<section id="news-section">
+  <div class="news-container">
+    <div class="news-row">
+      
+      <div class="col order-2" id="image-news">
+        <img id="news-img" class="img-fluid" style="width: 640px; height: 400px;" src="" class="card-img-top" alt="...">
+      </div>
+
+      <div id="news-box" class="col text-left py-5">
+        <h1 id="news-us" class="display-4">Spotlight</h1>
+            <div class="news-card">
+                <h4 class="news-title"></h5>
+                <span class="description"></span>
+            </div>
+            <div class="wrapper">
+              <button class="news-button">View Article</button>
+            </div>
+            
+      </div>
+      
+    </div>
+  </div>
+</section>
+<hr size="2" width="80%" color="lightgrey">  
+
 <!-- Subscribe-->
-<div class="container-news" id="subscribe">
+<div class="container-subscribe" id="subscribe">
   <div id="dark-overlay">
     <h5 id="sign-up">Let's keep in touch</h5>
-    <p id="news">Subscribe to keep up with fresh news and exciting updates.
+    <p id="subscribe">Subscribe to keep up with fresh news and exciting updates.
       <br> We promise not to spam you!</p>
     <div class="content">
       <form class="subscription">

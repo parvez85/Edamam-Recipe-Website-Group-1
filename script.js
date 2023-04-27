@@ -119,6 +119,44 @@ async function getNutritionData(searchValue) {
   return data;
 }
 
+//News-Section:
+getNewsData().then(function(data){
+  displayNewsData(data);
+})
+
+async function getNewsData() {
+  var response = await fetch("https://gnews.io/api/v4/search?q=nutrition&&lang=en&country=uk&apikey=8f097d5acbf1aabbf06a428aff3b8e82");
+  const data = await response.json();
+  console.log(data);
+  return data;
+  
+}
+
+
+function displayNewsData(data){
+  document.getElementsByClassName('news-container')
+
+  var newsImg = $("#news-img");
+  var newstitle = $('.news-title');
+  var description = $(".description");
+  var newsBtn = $(".news-button")
+  // var newsData = data.articles[2];
+  
+  var newsData = data.articles[Math.floor(Math.random()*data.articles.length)];
+
+  newstitle.html(newsData.title);
+  newsImg.attr('src', newsData.image);
+  description.html(newsData.description);
+
+  newsBtn.attr('data-url', newsData.url).on('click', function() {
+    var url = $(this).data('url');
+    window.open(url, '_blank');   
+  });
+
+
+}
+
+
 
 //Image Carousel:
 

@@ -197,24 +197,35 @@ height: 45px;
 }
 
 #about-section{
-padding-top: 50px;
-display: flex;
-margin-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+#about-section{
+  padding-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
 #about-us{
   text-decoration: underline;
   text-decoration-color: #FFC035;
 }
 
 .about-row{
-display: flex;
-justify-content: center;
-align-self:center;
-flex-wrap: wrap;
-margin-left: 50px;
-margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-self:center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
 
 .lead {
 font-size: 1rem;
@@ -369,7 +380,7 @@ input:-moz-placeholder {
 opacity : 0;
 }
 
-.container-news {
+.container-subscribe {
   /* position: absolute; */
   /* top: 0;
   left: 0; */
@@ -491,10 +502,99 @@ text-align: center;
 margin-top: 43px;
 }
 
-#news{
+#subscribe{
 color: white;
 font-size: 20px;
 text-align: center;
 margin-top: 5px;
 font-weight: 400;
+}
+
+
+
+/*Article/News section */
+
+#news-section{
+margin-bottom: 50px;
+display: grid !important; 
+justify-self: center !important;
+margin: 20px;
+}
+
+.news-container{
+display: grid;
+grid-template-columns: auto auto auto;
+justify-content: space-evenly;
+justify-self: center !important;
+
+background-color: #5CB075;
+
+}
+
+#news-us{
+  /* text-decoration: underline; */
+  /* text-decoration-color: #FFC035; */
+  padding-left: 10px;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #FFC035;
+  font-style: italic;
+}
+
+.news-row{
+display: flex;
+}
+
+.news-card{
+  padding-left: 10px;
+  align-items: center;
+  justify-items: center;
+  width: 600px;
+ text-align: center;
+ color: whitesmoke;
+ 
+}
+
+.news-title{
+  margin-bottom: 20px;
+ font-weight: 600
+
+}
+
+.description{
+  font-size: 18px;  
+}
+
+#image-news{
+  padding: 0% !important;
+  display: grid;
+  justify-content: space-evenly;
+  justify-self: center !important;
+}
+
+#news-box{
+  padding: 10px;
+  justify-content: space-evenly;
+  justify-self: center !important;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.news-button{
+  margin-top: 40px;
+  top: 50%;
+ background: none;
+ padding: 15px;
+ border: 2px solid #FFC035;
+ color: white;
+}
+
+.news-button:hover{
+  background-color: rgba(255, 255, 255, 0.397);
+}
+hr{
+  margin-right: auto;  
+  margin-left: auto; 
 }
