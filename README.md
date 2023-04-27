@@ -35,15 +35,17 @@ Secondly, we gained a deeper understanding of web development technologies, spec
 This image shows the homepage with a search bar to search for recipes by entering a food into the search bar.
 ![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.06.47.png)
 Here we have an About Us section which introduces Happy Tummy.
-![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.07.10.png)
+![Alt text](Assets/Images/AboutSection.png)
 In this section we have displayed a selection of popular recipes a carousel. When users click on the photos the recipe links will open.
 ![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.07.38.png)
 This section provides the nutritional values of the foods that are entered into the search bar eg 1 cup rice, 2 cup chicken.  
-![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.07.49.png)
+![Alt text](Assets/Images/NutritionalValue.png)
+This section shows news articles about food and nutrition.  
+![Alt text](Assets/Images/Articles.png)
 This footer bar includes an email subscription bar and selection of quick links, useful links, contacts sections.
 ![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.08.05.png)
 This page displays the search bar results as a selection of cards, when the user clicks on a recipe card the recipe link opens in another tab.
-![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.09.38.png)
+![Alt text](Assets/Images/RecipeSearch.png)
 
 
 ## Links
