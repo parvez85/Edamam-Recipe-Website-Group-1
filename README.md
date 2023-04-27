@@ -43,15 +43,9 @@ Here we have an About Us section which introduces Happy Tummy.
 In this section we have displayed a selection of popular recipes a carousel. When users click on the photos the recipe links will open.
 ![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.07.38.png)
 This section provides the nutritional values of the foods that are entered into the search bar eg 1 cup rice, 2 cup chicken.  
-<<<<<<< HEAD
 ![Alt text](Assets/Images/NutritionalValue.png)
-This section shows news articles about food and nutrition.  
-![Alt text](Assets/Images/Articles.png)
-=======
-![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.07.49.png)
 This section provides a news article related to health and nutrition which is randomated when the user refreshes the page.
 ![Alt text](Assets/Images/Screenshot%202023-04-27%20at%2014.27.19.png)
->>>>>>> cd23da8d040c1613ea00733b93e8baf95666cd17
 This footer bar includes an email subscription bar and selection of quick links, useful links, contacts sections.
 ![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.08.05.png)
 This page displays the search bar results as a selection of cards, when the user clicks on a recipe card the recipe link opens in another tab.
