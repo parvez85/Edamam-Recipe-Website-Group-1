@@ -600,7 +600,7 @@ display: flex;
 }
 
 .news-button:hover{
-  background-color: rgba(255, 255, 255, 0.397);
+  background-color: #ffbf35c4;
 }
 hr{
   margin-right: auto;  
