@@ -125,7 +125,7 @@ getNewsData().then(function(data){
 })
 
 async function getNewsData() {
-  var response = await fetch("https://gnews.io/api/v4/search?q=nutrition&&lang=en&country=uk&apikey=8f097d5acbf1aabbf06a428aff3b8e82");
+  var response = await fetch("https://gnews.io/api/v4/search?q=nutrition&&lang=en&country=uk&apikey=6d34f62fa675b45b88a1d2a71b713af6");
   const data = await response.json();
   console.log(data);
   return data;
