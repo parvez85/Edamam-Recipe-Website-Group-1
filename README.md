@@ -35,6 +35,10 @@ Happy Tummy is a recipe website that helps health-conscious individuals find hea
 * Edamam API
 * GNews API
 
+## WireFrame Examples developed in Figma
+![Alt text](Assets/Images/Screenshot%202023-04-27%20at%2019.10.58.png)
+![Alt text](Assets/Images/Screenshot%202023-04-27%20at%2019.11.41.png)
+
 ## Usage
 This image shows the homepage with a search bar to search for recipes by entering a food into the search bar.
 ![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.06.47.png)
