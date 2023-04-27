@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 async function getFooterRecipeData(searchValue) {
-    var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=96578cf4&app_key=ef31306002be0ec63784488c0c25e2ce&q=${searchValue}`);
+    var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=7e6d4ea5&app_key=a1bd339a9444c62936d8a832d41bc0ea&q=${searchValue}`);
     var data = await response.json();
     console.log(data);
     return data;
@@ -125,7 +125,7 @@ getNewsData().then(function(data){
 })
 
 async function getNewsData() {
-  var response = await fetch("https://gnews.io/api/v4/search?q=nutrition&&lang=en&country=uk&apikey=6d34f62fa675b45b88a1d2a71b713af6");
+  var response = await fetch("https://gnews.io/api/v4/search?q=nutrition&&lang=en&country=uk&apikey=33d8ea33b47ad88071cf3acba252981c");
   const data = await response.json();
   console.log(data);
   return data;
