@@ -1,6 +1,6 @@
 # Edamam-Recipe-Website-Group-1
 
-USER STORY:
+## USER STORY:
 As a health-conscious individual who loves to cook, I want to be able to easily search for recipes that not only taste great but also align with my nutritional needs.
 
 I want a recipe website that I can enter in my dietary preferences and any allergies I have, and the recipes will be filtered accordingly.
@@ -24,6 +24,13 @@ Happy Tummy is a recipe website that helps health-conscious individuals find hea
 
 Secondly, we gained a deeper understanding of web development technologies, specifically APIs and JavaScript. We learned how to use these languages to build a functional and visually appealing website, and how to integrate APIs to enhance the user experience.
 
+## Built with:
+* HTML
+* CSS
+* Javascript
+* Edamam API
+* GNews API
+
 ## Usage
 This image shows the homepage with a search bar to search for recipes by entering a food into the search bar.
 ![Alt text](Assets/Images/Screenshot%202023-04-26%20at%2020.06.47.png)
@@ -44,3 +51,14 @@ This page displays the search bar results as a selection of cards, when the user
 https://sophieemsi.github.io/Edamam-Recipe-Website-Group-1/
 
 https://github.com/SophieEmsi/Edamam-Recipe-Website-Group-1
+
+## Acknowledgments
+* [W3 schools](https://www.w3schools.com)
+* [Mdn Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [stack overflow](https://stackoverflow.com/)
+* [Figma](https://www.figma.com)
+* [Bootstrap](https://getbootstrap.com/)
+* [unsplash](https://unsplash.com/photos/hgGplX3PFBg)
+* [Material Design](https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors)
+* [Insomnia](https://insomnia.rest/)
+
