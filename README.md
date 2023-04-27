@@ -41,3 +41,6 @@ This page displays the search bar results as a selection of cards, when the user
 
 ## Links
 
+https://sophieemsi.github.io/Edamam-Recipe-Website-Group-1/
+
+https://github.com/SophieEmsi/Edamam-Recipe-Website-Group-1
