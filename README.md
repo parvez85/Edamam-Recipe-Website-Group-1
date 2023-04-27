@@ -58,9 +58,13 @@ This page displays the search bar results as a selection of cards, when the user
 
 ## Links
 
-https://sophieemsi.github.io/Edamam-Recipe-Website-Group-1/
+The URL of the deployed application.
 
-https://github.com/SophieEmsi/Edamam-Recipe-Website-Group-1
+https://parvez85.github.io/Edamam-Recipe-Website-Group-1/
+
+The URL of the GitHub repository
+
+https://github.com/parvez85/Edamam-Recipe-Website-Group-1
 
 ## Acknowledgments
 * [W3 schools](https://www.w3schools.com)
