@@ -27,7 +27,6 @@ img {
   width: 70%;
   margin: 50px auto;
   position: relative;
-  /* border-left-style: solid; */
   border-left-color: #aaa;
   
 }
@@ -69,6 +68,14 @@ img {
   border-radius: 0.25rem;
   background-color: rgba(255, 255, 255, 0.925);
 
+}
+
+.card:hover{
+  border: 4px solid #5DB075;
+}
+
+.card:hover #recipe-title{
+  text-decoration: 2px underline rgba(0, 0, 0, 0.658); 
 }
 
 
@@ -117,7 +124,6 @@ img {
   background: url(Assets/Images/bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   min-height: 700px;
   margin-bottom: 40px;
 }
@@ -227,9 +233,6 @@ height: 45px;
 .card h3 {
   padding: 2px;
   margin: 8px 0;
-  /*   line-height: 20px !important;
-  font-size: 18px !important;
-  font-weight: 500 !important; */
 }
 
 
@@ -256,7 +259,6 @@ height: 45px;
   border: 2px solid #ffbf35d7;
   font-size: 16px;
   font-weight: 600;
-  /* background-color: #FFC035; */
   color: #000 !important;
 }
 
@@ -285,10 +287,6 @@ text-align: center;
   text-align: left;
   padding-left: 10px;
 }
-
-/* #nutritional-section{
-  margin-top: 30px;
-} */
 
 .nutritional-form{
 display: block;
@@ -390,28 +388,20 @@ opacity : 0;
 }
 
 .container-subscribe {
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
   width: 80%;
   height: 340px;
-  /* display: flex;
-  align-content: center;
-  justify-content: center; */
   background-image: url(Assets/Images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 !important;
   border-radius: 10px;
-  /* margin-left: 50px;
-  margin-right: 50px */
+
   display: block;
   margin: auto;
   margin-top: 50px !important;
   margin-bottom: 50px !important;
-  /* margin-left: 70px !important;
-  margin-right: 70px !important; */
 }
+  
 
 #dark-overlay{
   display: grid;
@@ -539,8 +529,6 @@ background-color: #5CB075;
 }
 
 #news-us{
-  /* text-decoration: underline; */
-  /* text-decoration-color: #FFC035; */
   padding-left: 10px;
   text-align: center;
   padding-bottom: 15px;
@@ -606,3 +594,4 @@ hr{
   margin-right: auto;  
   margin-left: auto; 
 }
+

@@ -166,9 +166,7 @@ const carousel = document.querySelector(".carousel-container");
 const track = document.querySelector(".track");
 let width = carousel.offsetWidth;
 let index = 0;
-// window.addEventListener("resize", function () {
-//   width = carousel.offsetWidth;
-// });
+
 
 next.addEventListener("click", function (e) {
   e.preventDefault();
